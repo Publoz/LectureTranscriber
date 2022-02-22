@@ -1,0 +1,52 @@
+Thanks for getting this university hack.
+
+The first thing you must do is ensure you have downloaded the following softwares.
+-Firefox
+-Geckodriver
+-ffmpeg
+
+Additionally you will need to know the path to certain locations of their installs.
+(Every path needs 2 backslashes instead of usual 1 slash)
+
+Geckodriver requires the path to its .exe
+e.g C:\\Users\\paulo\\Desktop\\geckodriver.exe
+ffmpeg requires the path to its bin
+e.g C:\\Users\\paulo\\Desktop\\ffmpeg-n4.4-latest-win64-gpl-4.4\\bin
+
+The location to a firefox profile that is setup correctly is also needed.
+
+To setup:
+Use firefox and download a .mp4 file and make sure when the download pop up
+comes up you select 'save' and don't ask again. You also need to go to settings
+on Firefox and change the download folder to LectureTranscribe.
+
+Once that is done find the location of your firefox profile by going to
+about:profiles - in firefox url
+e.g C:\\Users\\paulo\\AppData\\Roaming\\Mozilla\\Firefox\\Profiles\\wv2i9hgv.default-release
+
+
+Now the values can be added to the values.txt file so that it is remembered and stored.
+The first line should have your student username for blackboard
+e.g STUDENT\irelanpaul
+The next line is for your password
+e.g didyouthinkiwouldtypemypassword
+Next is your gecko driver .exe location
+Next is your firefox profile location
+Then your ffmpeg bin folder location
+Finally put the path to the Lecture Transcribe folder and end it with \\ 
+e.g 'D:\\projects\\LectureTranscribe\\'
+
+Line 7 should say "Courses" - don't touch
+From here you can put in each course code and the next line after a code
+should be the link to the panopto vstream link
+
+-repeat for all courses - mine looks like
+COMP307
+https://blackboard.vuw.ac.nz/webapps/ppto-PanoptoCourseTool-BB5b274eb116928/Content.jsp?course_id=_115071_1&mode=view
+SWEN301
+https://blackboard.vuw.ac.nz/webapps/ppto-PanoptoCourseTool-BB5b274eb116928/Content.jsp?course_id=_119656_1&mode=view
+
+After the last link there should be 'END' to signal the end of the file
+
+Enjoy
+Paul
